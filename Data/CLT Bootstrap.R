@@ -1,10 +1,10 @@
 ##Define two rnorm samples of differing sample sizes
-Std1 <- rnorm(15, 0, 4)  #small sample size
-Std2 <- rnorm(100, 0, 4) #large sample size
+Std1 <- rnorm(20, 0, 4)  #small sample size
+Std2 <- rnorm(200, 0, 4) #large sample size
 
 ##Define two rexp samples of differing sample sizes
-Exp1 <- rexp(15)  #small sample size
-Exp2 <- rexp(100) #large sample size
+Exp1 <- rexp(20)  #small sample size
+Exp2 <- rexp(200) #large sample size
 
 ##Define a vector to house the 1000 samples for each
 bootStd1mean <- numeric(1000)
@@ -29,9 +29,9 @@ for (i in 1:1000) {
 }
 ##Below you will see Histogram output from our results:
   par(mfrow=c(2,2))
-hist(Std1, main = "Original rnorm Sample Size 15")
-hist(bootStd1mean, main = "BootStrap rnorm Sample Size 15")
+hist(Std1, main = "Original rnorm Sample Size 20")
+hist(bootStd1mean, main = "BootStrap rnorm Sample Size 20")
 
-hist(Std2, main = "Original rnorm Sample Size 100")
-hist(bootStd2mean, main = "BootStrap rnorm Sample Size 100")
+hist(Std2, main = "Original rnorm Sample Size 200")
+hist(bootStd2mean, main = "BootStrap rnorm Sample Size 200")
 
