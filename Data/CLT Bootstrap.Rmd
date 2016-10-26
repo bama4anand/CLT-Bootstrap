@@ -1,11 +1,11 @@
 
-#Center Limit Theorum using BootStrap:
+#Center Limit Theorem using BootStrap:
 
 In this assignment, we were given the tasks to Write bootstrap code to illustrate the Central Limit Theorem in R
 markdown and push result to GitHub.
 "In probability theory, the central limit theorem (CLT) states that, given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed, regardless of the underlying distribution". CLTDefinitionSource".
 In short, the CLT is saying that as our number of samples increases from any given population, the distribution of the averages of those samples will become closer to normally distributed. 
-In this study, I have taken both Normal and exponential samples of size 20 and 200 to display this theorum in action. Each sample has gone through a bootstrap looping mechanism in order to replicate the random sampling of the original dataset. The means of each sample is then stored to be viewed in histograms. 
+In this study, I have taken both Normal and exponential samples of size 20 and 200 to display this theorem in action. Each sample has gone through a bootstrap looping mechanism in order to replicate the random sampling of the original dataset. The means of each sample is then stored to be viewed in histograms. 
 
 
 ###Define two rnorm samples of differing sample sizes
@@ -79,7 +79,7 @@ hist(Exp2, main = "Original rexp Sample Size 200")
 hist(bootExp2mean, main = "BootStrap rexp Sample Size 200")
 
 You see clearly that the original dataset is skewed, but when randomly samples through a bootstrap mechanisms - the distribution of averages becomes normally distributed.
-I hope these results have helped you understand the Central Limit Theorum with some practical application and numbers
+I hope these results have helped you understand the Central Limit Theorem with some practical application and numbers
 
 
 
